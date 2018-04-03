@@ -145,7 +145,7 @@ extension PanoramaView {
         interfaceOrientationUpdater.updateInterfaceOrientation(with: transitionCoordinator)
     }
 
-    public func setNeedsResetRotation(animated: Bool = false) {
+    @objc public func setNeedsResetRotation(animated: Bool = false) {
         panGestureManager.stopAnimations()
         orientationNode.setNeedsResetRotation(animated: animated)
     }
