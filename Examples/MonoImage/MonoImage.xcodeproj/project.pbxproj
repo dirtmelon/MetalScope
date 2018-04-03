@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8582DF420734682005F802C /* MetalScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8582DF320734682005F802C /* MetalScope.framework */; };
+		B8582DF52073471B005F802C /* MetalScope.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8582DF320734682005F802C /* MetalScope.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFB892441E2F9CFF00FA9129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB892431E2F9CFF00FA9129 /* AppDelegate.swift */; };
 		BFB892461E2F9CFF00FA9129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB892451E2F9CFF00FA9129 /* ViewController.swift */; };
 		BFB8924B1E2F9CFF00FA9129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB8924A1E2F9CFF00FA9129 /* Assets.xcassets */; };
 		BFB8924E1E2F9CFF00FA9129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB8924C1E2F9CFF00FA9129 /* LaunchScreen.storyboard */; };
-		BFF6BB9A1E40CED10000B243 /* MetalScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF6BB971E40CEC30000B243 /* MetalScope.framework */; };
-		BFF6BB9B1E40CED10000B243 /* MetalScope.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFF6BB971E40CEC30000B243 /* MetalScope.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFF6BB9B1E40CED10000B243 /* MetalScope.framework in Embed Frameworks */,
+				B8582DF52073471B005F802C /* MetalScope.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B8582DF320734682005F802C /* MetalScope.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MetalScope.framework; sourceTree = "<group>"; };
 		BFB892401E2F9CFF00FA9129 /* MonoImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonoImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB892431E2F9CFF00FA9129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BFB892451E2F9CFF00FA9129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -68,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF6BB9A1E40CED10000B243 /* MetalScope.framework in Frameworks */,
+				B8582DF420734682005F802C /* MetalScope.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +105,7 @@
 				BFB8924A1E2F9CFF00FA9129 /* Assets.xcassets */,
 				BFB8924C1E2F9CFF00FA9129 /* LaunchScreen.storyboard */,
 				BFB8924F1E2F9CFF00FA9129 /* Info.plist */,
+				B8582DF320734682005F802C /* MetalScope.framework */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -346,6 +348,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KBLJX6U974;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -362,6 +368,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KBLJX6U974;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Sources",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
